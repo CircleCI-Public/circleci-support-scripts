@@ -48,4 +48,7 @@ spec:
         - regex:
           - selector: CIRCLECI_RUNNER_API_AUTH_TOKEN
             redactor: '("value": ")(?P<mask>.*)(")'
+        - regex:
+          - selector: CIRCLE_GOAT_CONFIG
+            redactor: '("value": ")(?P<mask>.*)(")'
   analyzers: []
