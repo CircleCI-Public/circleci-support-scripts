@@ -16,16 +16,6 @@ spec:
           - app.kubernetes.io/name=circleci-task-agent
           - app.kubernetes.io/managed-by=circleci-container-agent
         name: container-task
-    - http:
-        collectorName: runnerAPI
-        get:
-          # TODO: consider case of CircleCI Server (different domain)
-          url: https://runner.circleci.com/api/v2/runner?namespace=foobar
-          insecureSkipVerify: true
-          # NOTE: will fail authentication BUT we should get back a HTTP 4XX response
-          # This will mean runner APIs are reachable at least.
-          headers:
-            Circle-Token: "dummy"
     - exec:
         name: runner_api
         selector:
