@@ -49,9 +49,6 @@ You can directly execute the script without downloading it first:
 curl -s https://raw.githubusercontent.com/CircleCI-Public/circleci-support-scripts/main/server-docker-executor-logger/collect_docker_logs.sh | bash
 ```
 
-curl -s https://gist.githubusercontent.com/nanophate/beb5042b9f212b98db9f21f5d70b672e/raw/555521b9dde55b36f2651f4100eaa2efcf347223/collect-ba-docker-logs.sh | bash
-
-
 ## What the Script Does
 
 - Creates a directory named `ba-logs` to store logs.
